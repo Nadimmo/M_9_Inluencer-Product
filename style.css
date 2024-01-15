@@ -149,11 +149,7 @@ footer a{
     padding: 10px 10px;
 }
 
-
-
-
-
-
+/* small devices or mobile phone responsive */
 @media screen and (max-width:576px) {
     nav, ul, .section-1{
         flex-direction: column;
@@ -227,4 +223,31 @@ footer a{
         right: 50px;
         bottom: 20px;
     }
+}
+
+/* medium or tablet devices responsive */
+@media screen and (min-width:577px)  and (max-width:992px){
+    nav, .section-1, .section-2{
+        flex-direction: column;
+    }
+    .section-one-img{
+        order: 1;
+    }
+    .section-one-text{
+        order: 2;
+        position: relative;
+        left: 40px;
+    }
+    .section-products{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        position: relative;
+        right: 110px;
+    }
+    .section-one-text2{
+        position: relative;
+        right: 50px;
+    }
+    
+    
 }
